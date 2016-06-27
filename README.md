@@ -69,8 +69,6 @@ A rotor controller interface for the rot2proG controller from SPID Elektronik<br
 * <b>K</b> - Command (0x0F = STOP | 0x1F = STATUS | 0x2F = SET)
 * <b>END</b> - End byte (always 0x20)
 
-> NOTE: Since only whole degrees are supported, H4 is always set to 0x30 (0 tenths of degrees)
-
 ===
 <h3>Response Packet</h3>
 <table>
