@@ -1,11 +1,14 @@
 # rot2proG
-A rotor controller interface for the rot2proG controller from SPID Elektronik<br>
+>University at Buffalo Nanosatellite Laboratory 2016<br>
+>Created By Jaiden Ferraccioli<br>
+>E-mail: jaidenfe@buffalo.edu<br>
+>Current Version: v0.0.1
 
-> This is a control interface for the SPID rot2proG antenna rotor controller. Protocol documentation was adapted from http://ryeng.name/blog/3. The SPID protocol supports 3 commands: stop, status and set. The stop command stops the rotator in its current position and returns the aproximate position it has stopped in. The status command returns the current position of the rotator. The set command tells the rotator to rotate to a given position.
->
-> The rotator controller communicates with the PC using a serial port. Communication parameters are 600 bps, 8 bits, no parity and 1 stop bit.
->
-> All commands are issued as 13 byte packets, and responses are received as 12 byte packets.
+This is a control interface for the SPID Elektronik rot2proG antenna rotor controller. Protocol documentation was adapted from http://ryeng.name/blog/3. The SPID protocol supports 3 commands: stop, status and set. The stop command stops the rotator in its current position and returns the aproximate position it has stopped in. The status command returns the current position of the rotator. The set command tells the rotator to rotate to a given position.
+
+The rotator controller communicates with the PC using a serial port. Communication parameters are 600 bps, 8 bits, no parity and 1 stop bit.
+
+All commands are issued as 13 byte packets, and responses are received as 12 byte packets.
 
 ===
 
@@ -68,8 +71,6 @@ A rotor controller interface for the rot2proG controller from SPID Elektronik<br
 * <b>PV</b> - Elevation resolution in pulses per degree (ignored in command packet)
 * <b>K</b> - Command (0x0F = STOP | 0x1F = STATUS | 0x2F = SET)
 * <b>END</b> - End byte (always 0x20)
-
-> NOTE: Since only whole degrees are supported, H4 is always set to 0x30 (0 tenths of degrees)
 
 ===
 <h3>Response Packet</h3>
