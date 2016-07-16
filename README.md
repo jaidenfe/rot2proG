@@ -403,8 +403,8 @@ H1-H4 and V1-V4 are these numbers encoded as ASCII (0x30-0x39, i.e., '0'-'9').
 <h5>Example</h5>
 Pointing a Rot2Prog to azimuth 123.5, elevation 77.0 and a 0.5 degree per pulse value (PH=PV=2):
 
-_H = 2 * (360 + 123.5) = 967_ <br>
-_V = 2 * (360 + 77.0) = 874_
+_H = 2 * (360 + 123.5) = 967.0_ <br>
+_V = 2 * (360 + 77.0) = 874.0_
 
 <table>
   <tr>
@@ -442,19 +442,19 @@ _V = 2 * (360 + 77.0) = 874_
   <tr>
     <td><b>Value:</td>
     <td>0x57</td>
-    <td>0x00</td>
-    <td>0x09</td>
-    <td>0x06</td>
-    <td>0x07</td>
+    <td>0x39</td>
+    <td>0x36</td>
+    <td>0x37</td>
+    <td>0x30</td>
     <td>0x02</td>
-    <td>0x00</td>
-    <td>0x08</td>
-    <td>0x07</td>
-    <td>0x04</td>
+    <td>0x38</td>
+    <td>0x37</td>
+    <td>0x34</td>
+    <td>0x30</td>
     <td>0x02</td>
     <td>0x2F</td>
     <td>0x20</td>
   </tr>
 </table>
 
->NOTE: The PH and PV values sent are ignored. The values used by the rotator control unit are set by choosing resolution in the setup menu. Luckily, these values can be read using the status command.
+>NOTE: The PH and PV values sent are ignored. The values used by the rotator control unit are set by choosing resolution in the setup menu. These values can be read using the status command if they are not known.
