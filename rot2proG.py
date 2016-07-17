@@ -5,10 +5,6 @@ import time
 File: 	rot2proG.py
 Author: Jaiden Ferraccioli
 Brief: 	This class is a control interface for the SPID Elektronik rot2proG antenna rotor controller.
-	More information about the protocol and other aspects of this software may be found at:
-
-		https://github.com/jaidenfe/rot2proG
-
 	This software was designed as an open source interface between the rotor controller and
 	other systems. This can paired with an orbit propegator in order to extend usability and
 	range of communication between an earth station and satellites or a communication station
