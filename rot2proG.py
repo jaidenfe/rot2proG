@@ -94,15 +94,15 @@ class Rot2proG:
 
 		time.sleep(1)
 
-if __name__ == "__main__":
-	rot = Rot2proG(True)
-	rot.status()
-	rot.stop()
-	rot.set(209, 13)
-	rot.status()
-	time.sleep(3)
-	rot.status()
-	time.sleep(10)
-	rot.set(19, 144)
-	rot.status()
-	rot.stop()
+	def test(self):
+		rot = Rot2proG(True)
+		rot.status()
+		rot.stop()
+		rot.set(209, 13)
+		rot.status()
+		time.sleep(3)
+		rot.status()
+		time.sleep(10)
+		rot.set(19, 144)
+		rot.status()
+		rot.stop()
