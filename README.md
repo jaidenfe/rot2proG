@@ -1,3 +1,4 @@
+<img src="https://i.imgur.com/ztkbg9I.png" alt="UBNL Logo" width="140" height="auto" align="right">
 # rot2proG
 >University at Buffalo Nanosatellite Laboratory 2016<br>
 >Created By Jaiden Ferraccioli<br>
