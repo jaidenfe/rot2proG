@@ -3,7 +3,7 @@
 >University at Buffalo Nanosatellite Laboratory 2016<br>
 >Created By Jaiden Ferraccioli<br>
 >E-mail: jaidenfe@buffalo.edu<br>
->Current Version: v0.0.1
+>Current Version: v1.0
 
 This is a control interface for the SPID Elektronik rot2proG antenna rotor controller. Protocol documentation was adapted from http://ryeng.name/blog/3. The SPID protocol supports 3 commands: stop, status and set. The stop command stops the rotator in its current position and returns the aproximate position it has stopped in. The status command returns the current position of the rotator. The set command tells the rotator to rotate to a given position.
 
