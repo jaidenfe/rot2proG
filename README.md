@@ -5,9 +5,9 @@
 >E-mail: jaidenfe@buffalo.edu<br>
 >Current Version: v1.0
 
-This is a control interface for the SPID Elektronik rot2proG antenna rotor controller. Protocol documentation was adapted from http://ryeng.name/blog/3. The SPID protocol supports 3 commands: stop, status and set. The stop command stops the rotator in its current position and returns the aproximate position it has stopped in. The status command returns the current position of the rotator. The set command tells the rotator to rotate to a given position.
+This is a control interface for the SPID Elektronik rot2proG antenna rotor controller. Protocol documentation was adapted from http://ryeng.name/blog/3. The SPID protocol supports 3 commands: stop, status and set. The stop command stops the rotor in its current position and returns the aproximate position it has stopped in. The status command returns the current position of the rotor. The set command tells the rotor to rotate to a given position.
 
-The rotator controller communicates with the PC using a serial port. Communication parameters are 600 bps, 8 bits, no parity and 1 stop bit.
+The rotor controller communicates with the PC using a serial connection. Communication parameters are 600 bps, 8 bits, no parity and 1 stop bit. In order for the computer to communicate with the rotor, the controller must be set to the "Auto" setting. This can be done by pressing the function key ("F") until you see an "A" displayed in the left-most screen on the controller.
 
 All commands are issued as 13 byte packets, and responses are received as 12 byte packets.
 
